@@ -7,6 +7,11 @@ Supporting tools for reverse engineering the infotainment & climate control syst
 - [x] Capture data between Climate System <-> Main Dash LCD
 - [x] Reverse engineer & understand the signal (TL;DR a few bytes that control the 7-segment display directly)
 - [ ] Capture volume control data (comes from a different MCU / signal wire)
+- [ ] Build an ESP32 powered MCU / LCD controller
+- [ ] Form-fit a curved dash and get it professionally 3D printed
+- [ ] Install an iPad Mini
+- [ ] Control the iPad using a BLE keyboard
+- [ ] Show signals from the OBD-2 port using a BLE reader 
 
 ### Climate
 Data got exported to `full-range.csv` and then turned into 10-byte packets. I recorded a video along side the logic capture to know when the temperature setpoints changed and what their values were. I then removed duplicate lines in the data (the packet signal repeats every 40ms) and ended up with the data in this [Google Doc](https://docs.google.com/spreadsheets/d/1FpKDPLKMCnJ9wi3bUpDE3ozBxJAb5knNdP2zbHa9ohQ/edit?usp=sharing) which I can compare alongside my known temp setpoints.
